@@ -1,0 +1,15 @@
+track=
+artist=
+http://api.musixmatch.com/ws/1.1/track.search?q_track=fight%20song&apikey=63293915c47a2ed74116f3c64a445ee3&q_artist=rachel%20platten&s_track_rating=desc&page_size=1&page=1
+
+
+##jq ".message.body.track_list[0].track.track_name"
+
+##jq ".message.body.track_list[0].track.artist_name"
+
+jq ".message.body.track_list[0].track.track_share_url"
+
+"https://www.musixmatch.com/lyrics/Rachel-Platten/Fight-Song?utm_source=application&utm_campaign=api&utm_medium=Flytxt%3A1409618932406"
+
+
+.*(?=\?)
