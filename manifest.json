@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "youtube lyrics extension",
+ "description": "youtube lyrics extension",
+ "version": "1.0",
+ "content_scripts": [
+  {
+   
+  "matches": ["https://www.youtube.com/*","https://music.youtube.com/*"],
+   "js": ["content.js"],
+   "run_at": "document_end"
+  }
+ ],
+
+
+  "browser_action": {
+    "default_icon": "12193-200.png",
+    "default_title": "youtube lyrics extension",
+    "default_popup": "embed_lyrics.html"
+  },
+
+"permissions": [
+  "tabs",
+  "http://*/*",
+  "https://*/*"
+]
+
+ }
