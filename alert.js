@@ -19,3 +19,6 @@ $(document).ready(function(){
     // var div = document.getElementById("top_bar");
     // alert(div.innerHTML);
   });
+
+  // from:
+//   https://stackoverflow.com/questions/25045917/chrome-extension-accessing-the-dom-of-the-popup-html-and-getting-jquery-to-work
